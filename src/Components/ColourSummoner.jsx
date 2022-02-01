@@ -5,7 +5,7 @@ const ColourSummoner = () => {
   const [colours, setColours] = useState({})
   
   const fetchColours = async () => {
-    const res = await fetch("http://www.colourlovers.com/api/patterns/random?format=json?jsonCallback")
+    const res = await fetch("http://www.colourlovers.com/api/patterns/random?format=json")
     const data = await res.json()
     setColours(data)
     console.log(colours)
